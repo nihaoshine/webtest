@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iQIYI Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <div class="logo">iQIYI</div>
+        <div class="search-bar">
+            <input type="text" placeholder="猎罪图鉴（搜健次）">
+            <button class="search-btn">搜索</button>
+        </div>
+        <div class="header-right">
+            <div class="user-info">
+                <span class="points">-3°</span>
+                <div class="user-actions">
+                    <a href="#" class="game-icon"><i class="fas fa-gamepad"></i></a>
+                    <a href="#" class="upload-icon"><i class="fas fa-upload"></i></a>
+                    <a href="#" class="client-icon"><i class="fas fa-desktop"></i></a>
+                    <a href="#" class="history-icon"><i class="fas fa-history"></i></a>
+                </div>
+            </div>
+            <div class="promo-btn">首月特惠 -3¥</div>
+            <nav class="top-nav">
+                <a href="#" class="nav-item">游戏</a>
+                <a href="#" class="nav-item">上传</a>
+                <a href="#" class="nav-item">客户端</a>
+                <a href="#" class="nav-item">历史</a>
+                <button class="login-btn">登录</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 左侧导航栏 -->
+    <nav class="side-nav">
+        <a href="#" class="nav-item active">首页</a>
+        <a href="#" class="nav-item">微剧</a>
+        <a href="#" class="nav-item">免费</a>
+        <a href="#" class="nav-item">短视频</a>
+        <a href="#" class="nav-item">会员中心</a>
+        <a href="#" class="nav-item">电视剧</a>
+        <a href="#" class="nav-item">电影</a>
+        <a href="#" class="nav-item">综艺</a>
+        <a href="#" class="nav-item">动漫</a>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <!-- 轮播图 -->
+        <div class="carousel">
+            <div class="carousel-container">
+                <!-- 轮播图内容将由 JavaScript 动态生成 -->
+            </div>
+            <div class="carousel-indicators"></div>
+            <button class="carousel-btn prev">&lt;</button>
+            <button class="carousel-btn next">&gt;</button>
+        </div>
+
+        <!-- 视频推荐区域 -->
+        <div class="video-grid">
+            <!-- 视频卡片将由 JavaScript 动态生成 -->
+        </div>
+    </main>
+
+    <!-- 登录模态框 -->
+    <div class="login-modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>登录</h2>
+            <form id="loginForm">
+                <input type="text" placeholder="用户名" required>
+                <input type="password" placeholder="密码" required>
+                <button type="submit">登录</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html> 
